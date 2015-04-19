@@ -6,6 +6,8 @@ class NewVisitorTest(unittest.TestCase):
 
 	def setUp(self):
 		self.browser = webdriver.Firefox()
+		#this is temporary. later on build in explicit criteria
+		self.browser.implicitly_wait(3)
 
 	def tearDown(self):
 		time.sleep(4)
